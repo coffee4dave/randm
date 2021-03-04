@@ -1,0 +1,84 @@
+/* fonts */
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+nav {
+    font-size: 2rem;
+
+}
+
+h1+p {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem;
+    color: bisque;
+    font-family: Helvetica, Arial, sans-serif;
+
+    letter-spacing: 0;
+}
+
+a {
+    color: bisque;
+    text-decoration: underline;
+}
+
+/* sections */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-y: hidden;
+
+}
+
+#bgimg1 {
+    position: fixed;
+    width: 0;
+    height: 0;
+    padding: 50vh 50vw;
+    background: url("./images/RickandMorty_COVER_S2_1920X1080-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+header {
+    height: 10vh;
+}
+
+.bg-dark {
+    background-color: rgba(52, 58, 64, 0.5) !important;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    height: 10vh;
+    justify-self: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    text-align: center;
+
+
+}
