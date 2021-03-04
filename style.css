@@ -95,7 +95,7 @@ header {
 
 @media screen and (max-width: 639px) {
     main {
-        height: 75vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
     }
