@@ -101,6 +101,7 @@ header {
 }
 
 nav {
+    border: none;
     /* border: solid 1px white; */
 }
 
