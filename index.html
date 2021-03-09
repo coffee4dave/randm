@@ -92,15 +92,32 @@
             cursor: pointer;
         }
 
-        h1 {
-            font-family: 'Creepster', cursive;
-            font-size: 10rem;
-            color: #16ACC9;
-            margin: 0;
-            text-shadow: 0 0 20px #D1D94B;
-            letter-spacing: 20px;
+        @media screen and (max-width: 639px) {
+            h1 {
+                font-family: 'Creepster', cursive;
+                font-size: 6rem;
+                color: #16ACC9;
+                margin: 0;
+                text-shadow: 0 0 20px #D1D94B;
+                letter-spacing: 10px;
+
+            }
 
         }
+
+        @media screen and (min-width: 640px) {
+            h1 {
+                font-family: 'Creepster', cursive;
+                font-size: 10rem;
+                color: #16ACC9;
+                margin: 0;
+                text-shadow: 0 0 20px #D1D94B;
+                letter-spacing: 20px;
+
+            }
+        }
+
+
 
         a {
             text-decoration: none;
