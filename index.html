@@ -33,11 +33,32 @@
             display: flex;
             flex-direction: column;
             margin: 0 10%;
-            margin-bottom: 5%;
-            position: relative;
-            top: 30%;
-            transform: translate(0, -50%);
+        }
 
+        @media screen and (max-width: 639px) {
+            main {
+                display: flex;
+                flex-direction: column;
+                margin: 0 10%;
+                margin-bottom: 5%;
+                position: relative;
+                top: 50%;
+                transform: translate(0, -50%);
+
+            }
+        }
+
+        @media screen and (min-width: 640px) {
+            main {
+                display: flex;
+                flex-direction: column;
+                margin: 0 10%;
+                margin-bottom: 5%;
+                position: relative;
+                top: 30%;
+                transform: translate(0, -50%);
+
+            }
         }
 
         .container {
