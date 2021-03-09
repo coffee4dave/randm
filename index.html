@@ -24,8 +24,6 @@
             overflow-x: hidden;
         }
 
-
-
         body {
             background-color: black;
 
@@ -35,20 +33,38 @@
             display: flex;
             flex-direction: column;
             margin: 0 10%;
+            position: relative;
+            top: 30%;
+            transform: translate(0, -50%);
+
         }
 
         .container {
-            position: relative;
-            top: 50%;
-            transform: translate(0, -50%);
+            height: 40vh;
+            width: auto;
+
         }
 
-        img {
-            width: 100%;
+        #title_image {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+
+        }
+
+        #enter {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 40%;
             height: auto;
         }
 
-        #fadeIn {
+        .fadeIn {
             opacity: 1;
             animation-name: fadeInOpacity;
             animation-iteration-count: 1;
@@ -66,19 +82,32 @@
             }
         }
 
-        #enter {
-            width: 100px;
-            height: auto;
-        }
 
 
-
-        #enter:hover {
+        .flash:hover {
             animation-name: flickerAnimation;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in;
             animation-duration: 2s;
             cursor: pointer;
+        }
+
+        h1 {
+            font-family: 'Creepster', cursive;
+            font-size: 10rem;
+            color: #16ACC9;
+            margin: 0;
+            text-shadow: 0 0 20px #D1D94B;
+            letter-spacing: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .centered {
+            text-align: center;
         }
 
         @keyframes flickerAnimation {
@@ -140,13 +169,15 @@
 </head>
 
 <body>
-    <main>
-        <div class="fadeIn container">
-            <img src="./images/logo.png" alt="">
+    <main class="fadeIn ">
+        <div class="container">
+            <img id="title_image" src="./images/logo.png" alt="">
         </div>
-        <div id="enter" class="fadeIn container">
-            <a href="./main.html"><img src="./images/image-1-source-rick-and-morty-11562982914hmlrrghjuu.png"
-                    alt=""></a>
+        <div class="flash container">
+            <a href="./main.html">
+                <img id="enter" src="./images/image-1-source-rick-and-morty-11562982914hmlrrghjuu.png" alt="">
+                <h1 class="centered">Enter</h1>
+            </a>
         </div>
     </main>
 </body>
